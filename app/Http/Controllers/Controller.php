@@ -15,6 +15,10 @@ class Controller extends BaseController
     {
         return view('main_page');
     }
+    public function about()
+    {
+        return view('about');
+    }
 }
 
 

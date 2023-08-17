@@ -1,3 +1,4 @@
+<link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +7,7 @@
 <body>
 <header>
     @include('components.menu')
-    Это приложение создает QR-код из  ссылки и формирует его в файл
+
 </header>
 
 <main>
@@ -14,7 +15,7 @@
 </main>
 
 <footer>
-   '@assoed'
+   @assoed
 </footer>
 </body>
 </html>

@@ -1,7 +1,5 @@
-<nav>
-    <ul>
-        <li href="/"><a>Главная</a></li>
-        <li href="/about">Обо мне</li>
+<div class="topnav">
+    <a  href="/">Главная</a>
+    <a href="/about">Обо мне</a>
+</div>
 
-    </ul>
-</nav>
