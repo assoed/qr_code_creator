@@ -10,7 +10,7 @@
     <div>
         <form>
             <label for="message"></label>
-            <input type="text" id="message" name="message" placeholder="Введите вашу ссылку">
+            <input type="text" id="message" name="message" placeholder="Введи2те вашу ссылку">
             <button type="submit">Отправить</button>
         </form>
     </div>
