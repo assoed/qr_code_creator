@@ -20,3 +20,6 @@ Route::get('/about', function () {
     return view('about');
 });
 
+
+//поменять название функции
+Route::post('/process-form', 'QR_code_Controller@process_form')->name('process.form');
