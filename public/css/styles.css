@@ -85,6 +85,10 @@ button[type="submit"] {
 
 }
 
+.qr_code_show_block{
+    margin-left: 85px;
+}
+
 .qr_code_result{
     width: 275px;
     height: 275px;

@@ -32,9 +32,10 @@
                 <div class="qr_code_show_block">
                     <div id="qr_code_result"></div>
                     <div class="download_buttons_block">
-                        <button>Скачать</button>
-                        <button>Скачать</button>
-                        <button>Скачать</button>
+                        <button data-format="png">Download PNG</button>
+                        <button data-format="pdf">PDF</button>
+                        <button data-format="svg">SVG</button>
+                        <button data-format="eps">EPS</button>
                     </div>
                 </div>
 
