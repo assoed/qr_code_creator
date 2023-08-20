@@ -15,13 +15,29 @@
                         @csrf
                         <label for="qr_code_link"></label>
                         <input type="text" id="qr_code_link" name="qr_code_link" placeholder="Введите вашу ссылку">
+                        <div>
+                            <p>Выбрать цвет</p>
+
+                            <div>
+                                <label for="qr_code_color">Цвет QR кода</label>
+                                <input type="color" id="qr_code_color" name="qr_code_color" value="#black" />
+
+                            </div>
+
+                        </div>
                         <button id="get_qr_button" class="get_qr_button" type="submit" >Создать QR</button>
+
                     </form>
                 </div>
                 <div class="qr_code_show_block">
-
                     <div id="qr_code_result"></div>
+                    <div class="download_buttons_block">
+                        <button>Скачать</button>
+                        <button>Скачать</button>
+                        <button>Скачать</button>
+                    </div>
                 </div>
+
             </div>
         </section>
    </body>
