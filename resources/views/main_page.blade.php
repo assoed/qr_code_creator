@@ -4,6 +4,7 @@
 
 @extends('layouts.app')
 @section('title', 'Главная')
+
 @section('content')
 
    <body>
@@ -32,10 +33,11 @@
                 <div class="qr_code_show_block">
                     <div id="qr_code_result"></div>
                     <div class="download_buttons_block">
-                        <button data-format="png">Download PNG</button>
-                        <button data-format="pdf">PDF</button>
-                        <button data-format="svg">SVG</button>
-                        <button data-format="eps">EPS</button>
+                        <div class="download_buttons_block">
+                            <button onclick="downloadConvertedFile('svg')" >Download SVG</button>
+                            <button onclick="downloadConvertedFile('png')">Download PNG</button>
+                            <button onclick="downloadConvertedFile('pdf')">Download PDF</button>
+                        </div>
                     </div>
                 </div>
 

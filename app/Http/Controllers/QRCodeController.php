@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Http\Request;
 use  SimpleSoftwareIO\QrCode\Facades\QrCode;
 class QRCodeController extends Controller
@@ -24,37 +24,6 @@ class QRCodeController extends Controller
 
     }
 
-    public function qr_code_download_png(Request $request)
-    {
-        $qrCode = $this->process_form($request);
-
-        $response = response($qrCode)->header('Content-Type', 'image/png');
-        return $response;
-    }
-
-    public function qr_code_download_pdf(Request $request)
-    {
-        $qrCode = $this->process_form($request);
-
-        $response = response($qrCode)->header('Content-Type', 'image/pdf');
-        return $response;
-    }
-
-    public function qr_code_download_svg(Request $request)
-    {
-        $qrCode = $this->process_form($request);
-
-        $response = response($qrCode)->header('Content-Type', 'image/svg');
-        return $response;
-    }
-
-    public function qr_code_download_eps(Request $request)
-    {
-        $qrCode = $this->process_form($request);
-
-        $response = response($qrCode)->header('Content-Type', 'image/EPS');
-        return $response;
-    }
 
 
 

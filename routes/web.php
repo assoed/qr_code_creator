@@ -23,3 +23,10 @@ Route::get('/about', function () {
 use App\Http\Controllers\QRCodeController;
 //поменять название функции
 Route::post('/process-form', [QRCodeController::class,'process_form'])->name('process.form');
+
+
+Route::post('/download-png', [QRCodeController::class, 'download_png'])->name('download.png');
+
+use App\Http\Controllers\QRCodeConversionController;
+//Route::post('/convert','QRCodeConversionController@convertSVG');
+Route::post('/convert', [QRCodeConversionController::class, 'convertSVG'])->name('convert.svg');
