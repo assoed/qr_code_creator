@@ -17,7 +17,7 @@
                         <label for="qr_code_link"></label>
                         <input type="text" id="qr_code_link" name="qr_code_link"  value="https://gitlab.com/assoed2">
                         <div>
-                            <p>Выбрать цвет</p>
+                            <p>Выбрать цветdd</p>
 
                             <div>
                                 <label for="qr_code_color">Цвет QR кода</label>
