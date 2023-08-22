@@ -17,7 +17,7 @@
                         <label for="qr_code_link"></label>
                         <input type="text" id="qr_code_link" name="qr_code_link"  value="https://gitlab.com/assoed2">
                         <div>
-                            <p>Выбрать цвет</p>
+
 
                             <div>
                                 <label for="qr_code_color">Цвет QR кода</label>
@@ -34,9 +34,10 @@
                     <div id="qr_code_result"></div>
                     <div class="download_buttons_block">
                         <div class="download_buttons_block">
-                            <button onclick="downloadConvertedFile('svg')" >Download SVG</button>
-                            <button onclick="downloadConvertedFile('png')">Download PNG</button>
-                            <button onclick="downloadConvertedFile('pdf')">Download PDF</button>
+                            <button class="get_qr_button" onclick="downloadConvertedFile('svg')" >Download SVG</button>
+                            <button class="get_qr_button" onclick="downloadConvertedFile('png')">Download PNG</button>
+                            <button class="get_qr_button" onclick="downloadConvertedFile('pdf')">Download PDF</button>
+                            <button class="get_qr_button" onclick="downloadConvertedFile('eps')">Download EPS</button>
                         </div>
                     </div>
                 </div>

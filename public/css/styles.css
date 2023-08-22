@@ -42,7 +42,7 @@ body {
 
 main {
     flex: 1;
-    margin: 110px 130px;
+    margin: 110px 330px;
 }
 
 footer {
@@ -71,15 +71,7 @@ input[type="text"] {
     border-radius: 5px;
     font-size: 16px;
 }
-button[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
+
 .main_block{
     display: flex;
 
@@ -102,4 +94,11 @@ button[type="submit"] {
 
 .get_qr_button{
     margin-top: 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
 }
