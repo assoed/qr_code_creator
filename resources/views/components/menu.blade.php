@@ -1,5 +1,4 @@
 <div class="topnav">
-    <a  href="/">Главная</a>
-    <a href="/about">Обо мне</a>
+    <a href="/" class="{{ Request::is('/') ? 'active' : '' }}">Главная</a>
+    <a href="/about" class="{{ Request::is('about') ? 'active' : '' }}">Обо мне</a>
 </div>
-
