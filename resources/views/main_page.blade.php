@@ -15,7 +15,7 @@
                     <form id="qr_code_creator_form" method="POST" action="{{route('process.form')}}">
                         @csrf
                         <label for="qr_code_link"></label>
-                        <input type="text" id="qr_code_link" name="qr_code_link" placeholder="Введите вашу ссылку">
+                        <input type="text" id="qr_code_link" name="qr_code_link"  value="https://gitlab.com/assoed2">
                         <div>
                             <p>Выбрать цвет</p>
 
