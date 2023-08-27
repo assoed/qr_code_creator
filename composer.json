@@ -9,6 +9,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "intervention/image": "^2.7",
         "laravel/framework": "^10.10",
+        "ext-imagick": "*",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
         "simplesoftwareio/simple-qrcode": "^4.2",

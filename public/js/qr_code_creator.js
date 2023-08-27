@@ -37,12 +37,12 @@ function generate_qr_automatically(){
         })
 }
 
+
 function downloadConvertedFile(format) {
-    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     const svgElement = document.getElementById('qr_code_result').querySelector('svg');
     const svgData = new XMLSerializer().serializeToString(svgElement);
-
-    // Make an Ajax request to the Laravel route
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+    // делаем Ajax запрос в  Laravel route
     fetch('/convert', {
         method: 'POST',
         headers: {
@@ -56,11 +56,9 @@ function downloadConvertedFile(format) {
             // Trigger download using the Blob data
             const a = document.createElement('a');
             a.href = URL.createObjectURL(blob);
-            a.download = `generated_qr.${format}`;
+            a.download =`generated_qr.${format}` ; // Изменено на строковый литерал
             a.click();
-
-            // Clean up URL object
+            // очищаем url object
             URL.revokeObjectURL(a.href);
         });
 }
-
