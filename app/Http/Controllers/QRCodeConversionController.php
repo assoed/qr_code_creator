@@ -1,59 +1,5 @@
 <?php
 
-//
-//namespace App\Http\Controllers;
-//
-//use Illuminate\Http\Request;
-//use Spatie\Image\Image;
-//use Symfony\Component\Process\Process;
-//
-//use Spatie\Image\Manipulations;
-//
-//class QRCodeConversionController extends Controller
-//{
-//    public function convertSVG(Request $request)
-//    {
-//        $format = $request->input('format');
-//        $svgData = $request->input('svgData');
-//
-//        // Generate a temporary file to store the SVG
-//        $tempSvgFilePath = tempnam(sys_get_temp_dir(), 'svg');
-//        file_put_contents($tempSvgFilePath, $svgData);
-//
-//        // Use spatie/image to convert SVG to the desired format
-//        $convertedImagePath = tempnam(sys_get_temp_dir(), 'image');
-//        Image::load($tempSvgFilePath)
-//            ->format($format)
-//            ->save($convertedImagePath);
-//
-//        // Retrieve the converted image data
-//        $convertedData = file_get_contents($convertedImagePath);
-//
-//        // Clean up temporary files
-//        unlink($tempSvgFilePath);
-//        unlink($convertedImagePath);
-//
-//
-//
-//        if($format ==='eps'){
-//            $values='application/postscript';
-//        }
-//        elseif($format ==='pdf'){
-//        $values='application/postscript';
-//        }
-//        elseif ($format ==='svg'){
-//            $values='image/svg';
-//        }
-//        else{
-//            $values='image/png';
-//        }
-//        // Return the converted data as a downloadable response
-//        return response($convertedData)
-//            ->header('Content-Type', ".$values")
-//            ->header('Content-Disposition', "attachment; filename=generated_qr.$format");
-//    }
-//}
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
