@@ -1,5 +1,7 @@
-![Qr with link my project](./public/images/qr_code.png)
 
+<p align="center">
+    <img src="./public/images/qr_code_github.png" alt="Qr with link my project">
+</p>
 
 ## Об этом проекте
 
