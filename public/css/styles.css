@@ -95,9 +95,9 @@ input[type="text"] {
 }
 
 
-.get_qr_button{
+.get_qr_button {
     margin-top: 25px;
-    background-color: #007bff;
+    background-color: #007bff!important;
     color: white;
     border: none;
     border-radius: 5px;
@@ -118,3 +118,4 @@ input[type="text"] {
 .download_buttons_block{
     margin-top: 25px;
 }
+

@@ -38,9 +38,7 @@
                 </div>
                 <div class="qr_code_show_block">
                     <div id="qr_code_result"></div>
-                    <div class="download_buttons_block">
 
-                    </div>
                 </div>
 
             </div>
